@@ -1,0 +1,77 @@
+<html>
+<!-- HEADER WITH TITLE AND CSS STYLESHEET LINK -->
+
+<head>
+    <title>Piethon Home</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+<!-- BODY WITH NAVBAR, CONTENTS OF PAGE, FOOTER -->
+
+<body>
+    <!-- NAVBAR DIV TO DISPLAY THE NAVBAR ON THE PAGE -->
+    <div class="navbar">
+        <!-- OUTPUT LEFT ALIGNED LOGO IN NAVBAR -->
+        <div class="nav-left">
+            <a class="logo" href="../html-pages/index.html">
+                <img src="../images/piethon-logo.png" alt="PIETHON">
+            </a>
+        </div>
+        <!-- OUTPUT CENTER ALIGNED LINKS IN NAVBAR -->
+        <div class="nav-center">
+            <a class="active" href="../html-pages/index.html">Home</a>
+            <a href="../html-pages/playgame.html">Play Game</a>
+            <a href="../html-pages/howtoplay.html">How to Play</a>
+            <a href="../html-pages/leaderboard.html">Leaderboard</a>
+        </div>
+        <!-- OUTPUT THE RIGHT ALIGNED SIGN IN LINK -->
+        <div class="nav-right">
+            <a id="signin" href="../html-pages/signin.html">Sign In</a>
+        </div>
+
+    </div>
+    <!-- BODY DIV TO DISPLAY THE OPTIONS -->
+    <div class="body">
+        <!-- OPTIONS DIV TO PLAY AS GUEST, SIGN UP AND SIGN IN -->
+        <div class="options">
+            <h3>Welcome to PIETHON, your favorite game to pass your time!</h3>
+            <br>
+            <h3>Choose any one of the options to continue.</h3>
+            <br>
+            <a href="../html-pages/playgame.html">Play as Guest</a>
+            <br>
+            <h3>New here? Sign up now to save your scores to the leaderboard.</h3>
+            <br>
+            <a href="../html-pages/signup.html">Sign Up</a>
+            <br>
+            <h3>Already a member? Sign in right now to beat the highscore!</h3>
+            <br>
+            <a id="signin" href="../html-pages/signin.html">Sign In</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../js/authentication_brains.js"></script>
+
+
+    <!-- FOOTER DIV TO OUTPUT THE FOOTER ON THE PAGE -->
+    <div class="footer">
+        <!-- LEFT ALIGNED TEXT -->
+        <div class="nav-left">
+            <p>Created with &lt3 </p>
+        </div>
+        <!-- CENTER ALIGNED TEXT -->
+        <div class="nav-center">
+            <p>CST2120 Coursework 1: Game Website</p>
+            <p>Mir Riaz Ali - M00794755</p>
+            <button class="sign" id="signout" onclick="signout()" hidden></button>
+
+        </div>
+        <!-- RIGHT ALIGNED TEXT -->
+        <div class="nav-right">
+            <p>version: 1.0</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

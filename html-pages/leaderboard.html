@@ -1,0 +1,73 @@
+<html>
+<!-- HEADER AND CSS STYLESHEET LINK -->
+
+<head>
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+<!-- BODY OF THE PAGE -->
+
+<body>
+    <!-- NAVBAR OF THE PAGE -->
+    <div class="navbar">
+        <!-- LEFT ALIGNED LOGO -->
+        <div class="nav-left">
+            <a class="logo" href="../html-pages/index.html">
+                <img src="../images/piethon-logo.png" alt="PIETHON">
+            </a>
+        </div>
+        <!-- CENTERED LINKS OF NAVBAR-->
+        <div class="nav-center">
+            <a href="../html-pages/index.html">Home</a>
+            <a href="../html-pages/playgame.html">Play Game</a>
+            <a href="../html-pages/howtoplay.html">How to Play</a>
+            <a class="active" href="../html-pages/leaderboard.html">Leaderboard</a>
+        </div>
+        <!-- RIGHT ALIGNED LINK OF NAVBAR -->
+        <div class="nav-right">
+            <a id="signin" href="../html-pages/signin.html">Sign In</a>
+        </div>
+    </div>
+    <!-- BODY DIV -->
+    <div class="body">
+        <!-- INFO DIV TO DISPLAY PAGE TITLE AND INFO -->
+        <div class="info">
+            <h3>Leaderboard</h3>
+        </div>
+        <!-- CONTENT DIV WHERE LEADERBOARD WILL BE DISPLAYED -->
+        <div class="content">
+            <p><b>LEADERBOARD</b></p>
+            <p>The highest scores scored by all users.</p>
+            <!-- TABLE TO SHOW THE LEADERBOARD -->
+            <div id="ranking" style="width: 100%"></div>
+
+
+            <br><br>
+            <!-- IMPORT THE AUTHENTICATION JS FILE TO CHECK SIGN IN AND UNHIDE THE LOGOUT BUTTON -->
+            <script type="text/javascript" src="../js/authentication_brains.js"></script>
+        </div>
+    </div>
+
+    <!-- IMPORT THE TOPSCORE LOGIC SCRIPT TO SORT THE HIGHSCORES AND DISPLAY THE LEADERBOARD TABLE -->
+    <script type="text/javascript" src="../js/topscore_logic.js"></script>
+
+    <!-- FOOTER DIV -->
+    <div class="footer">
+        <!-- LEFT ALIGNED FOOTER TEXT -->
+        <div class="nav-left">
+            <p>Created with &lt3 </p>
+        </div>
+        <!-- CENTER ALIGNED FOOTER TEXT -->
+        <div class="nav-center">
+            <p>CST2120 Coursework 1: Game Website</p>
+            <p>Mir Riaz Ali - M00794755</p>
+            <button class="sign" id="signout" onclick="signout()" hidden></button>
+        </div>
+        <!-- RIGHT ALIGNED FOOTER TEXT -->
+        <div class="nav-right">
+            <p>version: 1.0</p>
+        </div>
+    </div>
+</body>
+
+</html>

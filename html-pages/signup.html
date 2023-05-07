@@ -1,0 +1,96 @@
+<html>
+<!-- HEADER WITH TITLE AND CSS STYLESHEET LINK -->
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+<!-- BODY OF THE PAGE -->
+
+<body>
+    <!-- LEFT ALIGNED NAVBAR LOGO -->
+    <div class="navbar">
+        <div class="nav-left">
+            <a class="logo" href="../html-pages/index.html">
+                <img src="../images/piethon-logo.png" alt="PIETHON">
+            </a>
+        </div>
+        <!-- CENTERED NAVBAR LINKS -->
+        <div class="nav-center">
+            <a href="../html-pages/index.html">Home</a>
+            <a href="../html-pages/playgame.html">Play Game</a>
+            <a href="../html-pages/howtoplay.html">How to Play</a>
+            <a href="../html-pages/leaderboard.html">Leaderboard</a>
+        </div>
+        <!-- RIGHT ALIGNED SIGN IN LINK -->
+        <div class="nav-right">
+            <a id="signin" href="../html-pages/signin.html">Sign In</a>
+        </div>
+    </div>
+    <!-- BODY DIV -->
+    <div class="body">
+        <!-- INFO DIV WITH PAGE TITLE AND INFO -->
+        <div class="info">
+            <h3>Sign Up</h3>
+
+            <p>Fill in your details to create an account</p>
+        </div>
+        <!-- SIGN UP FORM TO FILL DETAILS -->
+        <form>
+            <!-- USERNAME LABEL -->
+            <label for="uname"><b>username</b></label>
+            <!-- USERNAME INPUT FIELD -->
+            <input type="text" id="UsernameInput" name="uname" placeholder="Enter username" autofocus><br>
+            <!-- PASSWORD LABEL -->
+            <label for="pass"><b>Password</b></label>
+            <!-- PASSWORD INPUT FIELD -->
+            <input type="password" id="PasswordInput" name="pass" placeholder="Enter password"><br>
+            <!-- EMAIL LABEL -->
+            <label for="email"><b>email</b></label>
+            <!-- EMAIL INPUT FIELD -->
+            <input type="email" id="EmailInput" name="email" placeholder="Enter email address"><br>
+            <!-- DATE OF BIRTH LABEL -->
+            <label for="dob"><b>DOB</b></label>
+            <!-- DATE OF BBIRTH FIELD -->
+            <input type="date" id="DOBInput" name="dob"><br>
+            <!-- GENDER LABEL -->
+            <label type=""><b>Gender</b></label>
+            <!-- GENDER MALE RADIO  BUTTON -->
+            <input type="radio" name="gender" id=" GenderMale" value="Male">
+            <!-- GENDER MALE LABEL -->
+            <label class="gender" for="male">Male</label>
+            <!-- GENDER FEMALE RADIO BUTTON -->
+            <input type="radio" name="gender" id="GenderFemale" value="Female">
+            <!-- GENDER FEMALE LABEL -->
+            <label class="gender" for="female">Female</label><br>
+            <br><br>
+            <!-- SIGN UP BUTTON -->
+            <button class="sign" onclick="return(signupUser())">Sign Up</button>
+
+        </form>
+
+    </div>
+
+
+    <script type="text/javascript" src="../js/authentication_brains.js"></script>
+
+    <!-- FOOTER DIV -->
+    <div class="footer">
+        <!-- LEFT ALIGNED FOOTER TEXT -->
+        <div class="nav-left">
+            <p>Created with &lt3 </p>
+        </div>
+        <!-- CENTERED FOOTER TEXT -->
+        <div class="nav-center">
+            <p>CST2120 Coursework 1: Game Website</p>
+            <p>Mir Riaz Ali - M00794755</p>
+            <button class="sign" id="signout" onclick="signout()" hidden></button>
+        </div>
+        <!-- RIGHT ALIGNED FOOTER TEXT -->
+        <div class="nav-right">
+            <p>version: 1.0</p>
+        </div>
+    </div>
+</body>
+
+</html>

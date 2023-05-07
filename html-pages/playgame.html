@@ -1,0 +1,83 @@
+<html>
+<!-- HEADER WITH CSS STYLESHEET LINK -->
+
+<head>
+    <title>Play Game</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+<!-- BODY OF THE PAGE -->
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <!-- LEFT ALIGNED NAVBAR LOGO -->
+        <div class="nav-left">
+            <a class="logo" href="../html-pages/index.html">
+                <img src="../images/piethon-logo.png" alt="PIETHON">
+            </a>
+        </div>
+        <!-- CENTERED NAVBAR LINKS -->
+        <div class="nav-center">
+            <a href="../html-pages/index.html">Home</a>
+            <a class="active" href="../html-pages/playgame.html">Play Game</a>
+            <a href="../html-pages/howtoplay.html">How to Play</a>
+            <a href="../html-pages/leaderboard.html">Leaderboard</a>
+        </div>
+        <!-- RIGHT ALIGNED NAVBAR LINKS -->
+        <div class="nav-right">
+            <a id="signin" href="../html-pages/signin.html">Sign In</a>
+        </div>
+    </div>
+    <!-- BODY DIV -->
+    <div class="body">
+        <!-- INFO DIV WITH PAGE TITLE AND INFO -->
+        <div class="info">
+            <h3>Play Game</h3>
+            <p id="notsignedin" style="color: red"></p>
+        </div>
+        <!-- CONTENT DIV WHERE THE GAME WILL BE DISPLAYED -->
+        <div class="content">
+            <!-- game assets - snakes body and desserts -->
+            <img id="cake" src="../images/cake.png" alt="cake" hidden>
+            <img id="pie" src="../images/pie.png" alt="pie" hidden>
+            <img id="snakebody" src="../images/SnakeBody.png" alt="snakebody" hidden>
+
+            <!-- canvas where the piethon will move and desserts will be placed -->
+            <canvas id="piethonCanvas" width="800px" height="500px"></canvas>
+        </div>
+        <!-- SCORE DIV BOX WHERE THE SCORE IS DISPLAYED WITH START/RESTART BUTTON -->
+        <div class="scorediv">
+            <h3>Score</h3>
+            <br>
+            <h3 id="score">0</h3>
+            <!-- IMPORT GAME LOGIC JS FILE FOR GAME AND SCORE -->
+            <script type="text/javascript" src="../js/piethon_logic.js"></script>
+            <br>
+            <button id="playbutton" onclick="playgame()">Play</button>
+            <button id="replay" onclick="location.reload()" hidden> Replay</button>
+        </div>
+    </div>
+
+    <!-- IMPORT AUTHENTICATION JS FILE TO CHECK SIGN IN AND UNHIDE THE SIGNOUT BUTTON -->
+    <script type="text/javascript" src="../js/authentication_brains.js"></script>
+
+    <!-- FOOTER DIV -->
+    <div class="footer">
+        <!-- LEFT ALIGNED FOOTER TEXT -->
+        <div class="nav-left">
+            <p>Created with &lt3 </p>
+        </div>
+        <!-- CENTERED FOOTER TEXT -->
+        <div class="nav-center">
+            <p>CST2120 Coursework 1: Game Website</p>
+            <p>Mir Riaz Ali - M00794755</p>
+            <button class="sign" id="signout" onclick="signout()" hidden></button>
+        </div>
+        <!-- RIGHT ALIGNED FOOTER TEXT -->
+        <div class="nav-right">
+            <p>version: 1.0</p>
+        </div>
+    </div>
+</body>
+
+</html>

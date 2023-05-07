@@ -1,0 +1,108 @@
+<html>
+<!-- HEADER WITH TITLE AND CSS STYLESHEET LINK -->
+
+<head>
+    <title>How to Play</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+</head>
+<!-- BODY OF THE PAGE -->
+
+<body>
+    <!-- NAVBAR DIV -->
+    <div class="navbar">
+        <!-- LEFT ALIGNED LOGO IN NAVBAR -->
+        <div class="nav-left">
+            <a class="logo" href="../html-pages/index.html">
+                <img src="../images/piethon-logo.png" alt="PIETHON">
+            </a>
+        </div>
+        <!-- CENTERED LINKS  -->
+        <div class="nav-center">
+            <a href="../html-pages/index.html">Home</a>
+            <a href="../html-pages/playgame.html">Play Game</a>
+            <a class="active" href="../html-pages/howtoplay.html">How to Play</a>
+            <a href="../html-pages/leaderboard.html">Leaderboard</a>
+        </div>
+        <!-- RIGHT ALIGNED SIGN IN LINK -->
+        <div class="nav-right">
+            <a id="signin" href="../html-pages/signin.html">Sign In</a>
+        </div>
+    </div>
+    <!-- BODY DIV -->
+    <div class="body">
+        <!-- INFO DIV TO OUTPUT PAGE TITLE AND INFO -->
+        <div class="info">
+            <h3>How to Play</h3>
+        </div>
+        <!-- CONTENT DIV WHERE RULES OF THE GAME WILL BE DISPLAYED -->
+        <div class="content">
+            <h4>Click on the tabs to see the rules of the game.</h4>
+            <!-- THE RULES ARE DISPLAYED USING ACCORDIONS -->
+            <!-- CONTROLS ACCORDION -->
+            <div class="accordion">
+                <!-- CHECKBOX INPUT FOR ACCORDION 1 -->
+                <input id="accordion-1" type="checkbox">
+                <!-- LABEL FOR ACCORDION -->
+                <label for="accordion-1">Controls</label>
+                <!-- CONTENT FOR ACCORDION -->
+                <div class="accordion-content">
+                    <p>Use the arrow keys to move up/down/left/right.</p>
+                    <p>Move the snake towards a pie to eat it.</p>
+                    <p>The snake will get longer as it eats.</p>
+                </div>
+            </div>
+
+            <!-- SCORES ACCORDION -->
+            <div class="accordion">
+                <!-- CHECKBOX INPUT FOR ACCORDION 2 -->
+                <input id="accordion-2" type="checkbox">
+                <!-- LABEL FOR ACCORDION -->
+                <label for="accordion-2">Scoring</label>
+                <!-- CONTENT FOR ACCORDION -->
+                <div class="accordion-content">
+                    <p>Eat a pie - get 10 points.</p>
+                    <p>Eat a cake - get 20 points.</p>
+                    <p>Game will speed up after 100, 150, 200 points.</p>
+                </div>
+            </div>
+
+            <!-- LIVES ACCORDION -->
+            <div class="accordion">
+                <!-- CHECKBOX INPUT FOR ACCORDION 3 -->
+                <input id="accordion-3" type="checkbox">
+                <!-- LABEL FOR ACCORDION -->
+                <label for="accordion-3">Lives</label>
+                <!-- CONTENT FOR ACCORDION -->
+                <div class="accordion-content">
+                    <p>The snake gets only one life.</p>
+                    <p>The snake dies if it eats itself.</p>
+                    <p>The snake will also die if it goes beyond the walls.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../js/authentication_brains.js"></script>
+
+    <!-- FOOTER DIV -->
+    <div class="footer">
+        <!-- LEFT ALIGNED FOOTER TEXT -->
+        <div class="nav-left">
+            <p>Created with &lt3 </p>
+        </div>
+        <!-- CENTER ALIGNED FOOTER TEXT -->
+        <div class="nav-center">
+            <p>CST2120 Coursework 1: Game Website</p>
+            <p>Mir Riaz Ali - M00794755</p>
+            <button class="sign" id="signout" onclick="signout()" hidden></button>
+        </div>
+        <!-- RIGHT ALIGNED FOOTER TEXT -->
+        <div class="nav-right">
+            <p>version: 1.0</p>
+        </div>
+    </div>
+</body>
+
+</html>
